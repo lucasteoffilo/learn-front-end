@@ -1,0 +1,321 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Lato', sans-serif;
+        font-family: 'Lato', sans-serif;
+    }
+    
+    section.main {
+        background-image: linear-gradient(to bottom right, #ffffff, #D9DCEB);
+        height: 600px;
+    }
+    
+    .center {
+        max-width: 1100px;
+        padding: 0 2%;
+        margin: 0 auto;
+    }
+    
+    .space {
+        height: 20px;
+    }
+    
+    .logo {
+        color: white;
+        float: left;
+        margin-left: 16px;
+        font-size: 29px;
+        font-weight: normal;
+    }
+    
+    .form-element p {
+        color: white;
+        font-size: 13px;
+    }
+    
+    header {
+        padding: 8px 0;
+        background-image: linear-gradient(to bottom right, #4E69A2, #3B5998);
+        vertical-align: middle;
+    }
+    
+    .clear {
+        clear: both;
+    }
+    
+    form.form-login {
+        float: right;
+    }
+    
+    .form-login .form-element {
+        display: inline-block;
+        margin-right: 15px;
+    }
+    
+    .form-element input[type=email]:focus,
+    .form-element input[type=password]:focus {
+        outline: none;
+    }
+    
+    .form-element input[type=email],
+    .form-element input[type=password] {
+        margin-top: 4px;
+    }
+    
+    .form-element input[type=submit] {
+        cursor: pointer;
+        border: 0;
+        background: #1972f7;
+        border: 2px solid #215ab2;
+        color: white;
+        padding: 3px 5px;
+    }
+    
+    .form-element input[type=submit]:hover {
+        background: #215ab2;
+    }
+    
+    .form-element input[type=submit]:focus {
+        outline: none;
+    }
+    
+    .form-element a {
+        text-decoration: none;
+        color: rgb(189, 189, 189);
+        font-size: 12px;
+    }
+    
+    .form-element a:hover {
+        text-decoration-line: underline;
+    }
+    
+    .keep-conected>input {
+        float: left;
+    }
+    
+    .keep-conected>input[type=checkbox]:focus {
+        outline: none;
+        color: white;
+    }
+    
+    .keep-conected>input[type=checkbox]:checked {
+        color: #ccc;
+        outline: none;
+    }
+    
+    .keep-conected>p {
+        font-size: 12px;
+        color: rgb(189, 189, 189);
+        float: right;
+    }
+    
+    .form-element {
+        vertical-align: middle;
+    }
+    
+    .form-element a {
+        display: flex;
+    }
+    
+    .space-2 {
+        height: 4px;
+    }
+    
+    .form-create-element {}
+    /* inicio section main */
+    
+    .copy {
+        float: left;
+        width: 60%;
+        align-content: center;
+        margin-top: 40px;
+    }
+    
+    .copy h1 {
+        color: #175388;
+        font-size: 21px;
+        margin-left: 15px;
+    }
+    
+    .copy img {
+        margin-top: 20px;
+        max-width: 100%;
+        margin-left: 15px;
+    }
+    
+    .criar-conta {
+        float: right;
+        margin-top: 30px;
+        width: 40%;
+    }
+    
+    .criar-conta h2 {
+        font-size: 38px;
+        margin-bottom: 8px;
+    }
+    
+    .criar-conta p {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    .w50 {
+        width: 50%;
+        float: left;
+        padding: 5px 5px 0 0;
+    }
+    
+    .w100 {
+        width: 100%;
+        float: left;
+        padding: 5px 5px 0 0;
+    }
+    
+    .form-singup input {
+        width: 100%;
+    }
+    
+    .form-singup input[type=email],
+    .form-singup input[type=text],
+    .form-singup input[type=password] {
+        font-size: 18px;
+        padding: 8px 10px;
+        border: 1px solid #ccd0d5;
+        border-radius: 5px;
+        outline: none;
+    }
+    
+    .form-create-element input[type=submit] {
+        max-width: 100%;
+        background: linear-gradient(to bottom right, #60A84C, #6fa751);
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        border: 1px solid #1e9b24;
+        font-weight: bold;
+        font-size: 18px;
+    }
+    
+    .form-create-element input[type=submit]:hover {
+        background: linear-gradient(to bottom right, #518f40, #619246);
+    }
+    /* fim section main */
+    
+    section.linguas {
+        padding: 30px 0;
+        background: white;
+        vertical-align: middle;
+    }
+    
+    section.linguas .center {
+        margin-top: 25px;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ccc;
+    }
+    
+    section.linguas a {
+        padding-right: 15px;
+        font-size: 14px;
+        color: #365899;
+        text-decoration: none;
+    }
+    
+    section.linguas a.selected-lingua {
+        color: #737373;
+    }
+    /* inicio do responsivo */
+    
+    @media screen and (max-width: 1130px) {
+        section.main {
+            height: 600px;
+            text-align: center;
+            align-items: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .criar-conta {
+            padding-top: 100px;
+            width: 100%;
+            align-items: center;
+            margin: 0 auto;
+            float: left;
+            clear: left;
+        }
+        .copy {
+            display: none;
+        }
+    }
+    
+    @media screen and (max-width: 700px) {
+        .logo,
+        form.form-login {
+            margin: 0;
+            width: 100%;
+            text-align: center;
+            float: none;
+        }
+        form.form-login>p {
+            text-align: left;
+        }
+        .keep-conected {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            float: none;
+            margin-top: 5px;
+            padding: 5px;
+            outline: none;
+            width: 100%;
+            max-width: 320px;
+        }
+        .keep-conected p {
+            float: left;
+            vertical-align: super;
+        }
+        .keep-conected>input[type=checkbox] {
+            min-width: 18px;
+            min-height: 18px;
+            margin-right: 5px;
+        }
+        form.form-login {
+            display: inline-block;
+            margin-top: 20px;
+        }
+        form.form-login div.form-element {
+            display: inline-block;
+            width: 100%;
+            text-align: center;
+            float: none;
+            margin-top: 5px;
+            padding: 5px;
+            outline: none;
+            width: 100%;
+            max-width: 320px;
+        }
+        form.form-login div.form-element input[type=email],
+        form.form-login div.form-element input[type=password] {
+            margin-top: 5px;
+            border: 0;
+            padding: 5px;
+            outline: none;
+            width: 100%;
+            max-width: 320px;
+        }
+        form.form-login div.form-element input[type=submit] {
+            width: 140px;
+        }
+        form.form-create-element>input[type="submit"] {
+            width: 100%;
+        }
+        section.linguas {
+            padding: 9px;
+            margin-bottom: 20px;
+        }
+    }

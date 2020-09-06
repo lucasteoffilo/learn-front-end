@@ -1,0 +1,1 @@
+Projeto simples, criando uma landing page responsiva
