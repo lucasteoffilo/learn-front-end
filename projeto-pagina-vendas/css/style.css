@@ -255,8 +255,17 @@ section.sessao1 .container {
 
 .sobre-autor {
     float: left;
+    width: 100%;
+}
+
+.scrollEquipe {
     max-width: 600px;
     padding-left: 30px;
+    overflow: auto;
+}
+
+.scroll-wraper {
+    width: 100%;
 }
 
 .titulo-autor {
